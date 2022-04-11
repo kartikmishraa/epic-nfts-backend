@@ -1,3 +1,5 @@
+// Script to deploy to the ethereum network (test/mainnet)
+
 const main = async () => {
   const contractFactory = await hre.ethers.getContractFactory("MyEpicNFT");
   const nftContract = await contractFactory.deploy();
